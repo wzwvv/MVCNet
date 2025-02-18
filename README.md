@@ -1,2 +1,2 @@
-# TSFNet
-This repository contains the original Python code for **Supervised Contrastive Learning for EEG-based Brain-Computer Interfaces**.
+# MCNet
+This repository contains the original Python code for **Multi-View Contrastive Network (MCNet) for Motor Imagery Classification**.
