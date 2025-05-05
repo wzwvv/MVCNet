@@ -80,7 +80,7 @@ For reproducibility, the preprocessed EEG dataset **BNCI2014001** can be accesse
 🔗 https://pan.baidu.com/s/19osNsaDnNliQTXxiK3ncOA  (提取码: pdtg)
 ```
 
-Other datasets can be downloaded from [the Mother Of All BCI Benchmarks (MOABB)](https://moabb.neurotechx.com)
+All datasets can be downloaded from [the Mother Of All BCI Benchmarks (MOABB)](https://moabb.neurotechx.com)
 
 ---
 
