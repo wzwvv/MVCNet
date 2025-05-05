@@ -24,6 +24,11 @@ MVCNet/
 │   ├── Conformer.py
 │   └── ...
 │
+├── data/             # datasets
+│   ├── BNCI2014001
+│   ├── Zhou2016
+│   └── ...
+│
 ├── utils/              # Utility functions
 │   ├── data_augment.py     # Data augmentation (e.g., time, frequency, spatial)
 │   ├── contrastive_loss.py # Contrastive loss definitions
@@ -74,7 +79,7 @@ Classification Accuracy (%) ± Std on Five MI Datasets under CO Setting:
 
 ## 📂 Dataset
 
-For reproducibility, the preprocessed EEG dataset **BNCI2014001** can be accessed at (put X.npy into /dataset/BNCI2014001/):
+For reproducibility, the preprocessed EEG dataset **BNCI2014001** can be accessed at (put X.npy into /data/BNCI2014001/):
 
 ```
 🔗 https://pan.baidu.com/s/19osNsaDnNliQTXxiK3ncOA  (提取码: pdtg)
