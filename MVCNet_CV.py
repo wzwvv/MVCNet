@@ -18,8 +18,7 @@ import pandas as pd
 import gc
 import sys
 from utils.data_augment import data_aug
-from utils.network import backbone_net, backbone_net_deep, backbone_net_shallow, backbone_net_ifnet, \
-    backbone_net_fbcnet, backbone_net_adfcnn, backbone_net_conformer, backbone_net_fbmsnet, encoder, projector
+from utils.network import backbone_net_ifnet, encoder, projector
 from utils.LogRecord import LogRecord
 from utils.dataloader import read_mi_within_tar_CV
 from utils.utils import fix_random_seed, cal_acc_comb, data_loader_within
@@ -526,10 +525,10 @@ if __name__ == '__main__':
         # learning rate
         args.lr = 0.001
         # train batch size
-        if args.aug:
-            args.batch_size = 64
-        else:
-            args.batch_size = 32  # TODO
+        # if args.aug:
+        #     args.batch_size = 64
+        # else:
+        args.batch_size = 32  # TODO
         # training epochs
         args.max_epoch = 100
 
