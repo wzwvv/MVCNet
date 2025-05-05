@@ -74,10 +74,10 @@ If you find this work helpful, please consider citing the corresponding paper:
 
 ```
 @article{wang2025mvcnet,
-  title={Multi-View Contrastive Network for Motor Imagery EEG Decoding},
-  author={Wang, Ziwei and Li, Siyang and Chen, Xiaoqing and Li, Wei and Wu, Dongrui},
-  journal={arXiv preprint arXiv:2502.17482},
-  year={2025}
+      title={MVCNet: Multi-View Contrastive Network for Motor Imagery Classification}, 
+      author={Ziwei Wang and Siyang Li and Xiaoqing Chen and Wei Li and Dongrui Wu},
+      journal={arXiv preprint arXiv:2502.17482},
+      year={2025}
 }
 ```
 
