@@ -74,7 +74,7 @@ Classification Accuracy (%) ± Std on Five MI Datasets under CO Setting:
 
 ## 📂 Dataset
 
-For reproducibility, the preprocessed EEG dataset **BNCI2014001** can be accessed at:
+For reproducibility, the preprocessed EEG dataset **BNCI2014001** can be accessed at (put X.npy into /dataset/BNCI2014001/):
 
 ```
 🔗 https://pan.baidu.com/s/19osNsaDnNliQTXxiK3ncOA  (提取码: pdtg)
