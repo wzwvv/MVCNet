@@ -86,7 +86,7 @@ All datasets can be downloaded from [the Mother Of All BCI Benchmarks (MOABB)](h
 
 ## 💡 Citation
 
-If you find this work helpful, please consider citing the corresponding paper:
+If you find this work helpful, please consider citing our paper:
 
 ```
 @article{wang2025mvcnet,
