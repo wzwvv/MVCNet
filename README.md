@@ -42,9 +42,22 @@ MVCNet supports three standard MI decoding paradigms:
 - **CV (Cross-Validation):** Within-subject, stratified 5-fold validation. The data partitions were structured chronologically while maintaining class-balance, following FBCNet.
 - **LOSO (Leave-One-Subject-Out):** Cross-subject generalization evaluation
 
-## 🔬 New Results
+## 📊 Comparison with Baseline Models
 
-Classification Accuracy (%) ± Std on Five MI Datasets under Chronological Order (CO) Setting:
+Classification Accuracy (%) ± Std on Five MI Datasets under CO setting:
+
+| Dataset        | EEGNet        | SCNN          | DCNN          | FBCNet        | ADFCNN        | EEGConformer  | IFNet         | **MVCNet (Ours)** |
+|----------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|-------------------|
+| BNCI2014001    | 69.05 ± 1.00  | 73.57 ± 2.36  | 59.29 ± 1.64  | 68.97 ± 1.26  | 73.73 ± 2.26  | 78.57 ± 0.66  | 77.94 ± 0.93  | **83.17 ± 0.74**  |
+| Zhou2016       | 80.13 ± 3.35  | 75.03 ± 6.15  | 78.03 ± 2.37  | 63.33 ± 2.29  | 71.42 ± 1.95  | 73.87 ± 4.51  | 81.70 ± 2.08  | **84.11 ± 2.68**  |
+| Blankertz2007  | 78.79 ± 2.78  | 76.71 ± 2.09  | 70.00 ± 4.12  | 75.93 ± 1.31  | 76.07 ± 1.41  | 82.29 ± 2.62  | 84.00 ± 0.57  | **87.07 ± 0.52**  |
+| BNCI2014002    | 66.07 ± 2.76  | 79.07 ± 1.96  | 64.07 ± 2.70  | 69.50 ± 0.95  | 73.00 ± 1.95  | 76.21 ± 1.46  | 78.29 ± 1.68  | **81.29 ± 2.31**  |
+| BNCI2015001    | 75.58 ± 1.69  | 83.71 ± 1.34  | 71.08 ± 1.82  | 74.92 ± 0.97  | 78.75 ± 0.62  | 82.63 ± 0.54  | 83.83 ± 0.90  | **85.67 ± 0.55**  |
+| Average    | 73.92         | 77.62         | 68.49         | 70.53         | 74.59         | 78.71         | 81.15         | **84.26**         |
+
+## 🔬 Ablation Study
+
+Classification Accuracy (%) ± Std on Five MI Datasets under CO Setting:
 
 | Dataset        | MVCNet         | MVCNet (cvc)   | MVCNet (cmc)   |
 |----------------|----------------|----------------|----------------|
