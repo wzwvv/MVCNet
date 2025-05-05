@@ -1,9 +1,74 @@
 # MVCNet
 
-This repository hosts the implementation of **Multi-View Contrastive Network (MVCNet) for Motor Imagery Classification**.
+This repository provides the official implementation of **MVCNet: Multi-View Contrastive Network for Motor Imagery Classification**.
 
-The source code, along with baselines and the proposed MVCNet, will be released upon formal acceptance.
+MVCNet is a dual-branch framework that integrates multi-view data augmentation, CNN–Transformer parallel modeling, and supervised contrastive learning to improve representation learning and decoding generalizability of EEG-based MI Classification.
 
-MVCNet combines multi-view data augmentation, dual-branch (CNN and Transformer) modeling, and supervised contrastive learning to enhance EEG representation learning and decoding generalizability.
+---
 
-We appreciate your interest and patience.
+## 📁 Project Structure
+
+The codebase is organized as follows:
+
+```
+MVCNet/
+│
+├── MVCNet_CO.py        # Main script for the Chronological Order (CO) scenario
+├── MVCNet_CV.py        # Main script for the Cross-Validation (CV) scenario
+├── MVCNet_LOSO.py      # Main script for the Leave-One-Subject-Out (LOSO) scenario
+│
+├── models/             # Implementations of MVCNet and baseline models
+│   ├── IFNet.py
+│   ├── Conformer.py
+│   └── ...
+│
+├── utils/              # Utility functions
+│   ├── data_augment.py     # Data augmentation (e.g., time, frequency, spatial)
+│   ├── contrastive_loss.py # Contrastive loss definitions
+│   ├── network.py          # encoder, decoder, etc
+│   └── ...
+│
+└── README.md
+```
+
+---
+
+## 🧪 Experimental Scenarios
+
+MVCNet supports three standard MI decoding paradigms:
+
+- **CO (Chronological Order):** Within-subject, time-based data split
+- **CV (Cross-Validation):** Within-subject, stratified 5-fold validation. The data partitions were structured chronologically while maintaining class-balance, following FBCNet.
+- **LOSO (Leave-One-Subject-Out):** Cross-subject generalization evaluation
+
+---
+
+## 📂 Dataset
+
+For reproducibility, the preprocessed EEG dataset **BNCI2014001** can be accessed at:
+
+```
+🔗 https://pan.baidu.com/s/19osNsaDnNliQTXxiK3ncOA  (提取码: pdtg)
+```
+
+Other datasets can be downloaded from [the Mother Of All BCI Benchmarks (MOABB)](https://moabb.neurotechx.com)
+
+---
+
+## 💡 Citation
+
+If you find this work helpful, please consider citing the corresponding paper:
+
+```
+@article{wang2025mvcnet,
+  title={Multi-View Contrastive Network for Motor Imagery EEG Decoding},
+  author={Wang, Ziwei and Li, Siyang and Chen, Xiaoqing and Li, Wei and Wu, Dongrui},
+  journal={arXiv preprint arXiv:2502.17482},
+  year={2025}
+}
+```
+---
+
+## 🙌 Acknowledgments
+
+We appreciate your interest and patience. Feel free to raise issues or pull requests for questions or improvements.
