@@ -4,7 +4,6 @@ This repository provides the official implementation of **MVCNet: Multi-View Con
 
 MVCNet is a dual-branch framework that integrates multi-view data augmentation, CNN–Transformer parallel modeling, and supervised contrastive learning to improve representation learning and decoding generalizability of EEG-based MI Classification.
 
----
 
 ## 📁 Project Structure
 
@@ -31,7 +30,6 @@ MVCNet/
 └── README.md
 ```
 
----
 
 ## 🧪 Experimental Scenarios
 
@@ -82,7 +80,6 @@ If you find this work helpful, please consider citing the corresponding paper:
   year={2025}
 }
 ```
----
 
 ## 🙌 Acknowledgments
 
