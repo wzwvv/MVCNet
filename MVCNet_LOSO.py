@@ -22,8 +22,7 @@ from scipy.linalg import fractional_matrix_power
 from utils.utils import fix_random_seed, cal_acc_comb, data_loader, data_normalize, data_alignment_uneven
 from utils.utils import data_alignment
 from utils.data_augment import data_aug
-from utils.network import backbone_net, backbone_net_deep, backbone_net_shallow, backbone_net_ifnet, \
-    backbone_net_fbcnet, backbone_net_adfcnn, backbone_net_conformer, backbone_net_fbmsnet, encoder, projector
+from utils.network import backbone_net_ifnet, encoder, projector
 from utils.LogRecord import LogRecord
 from utils.dataloader import read_mi_combine_tar, read_mi_within_tar
 from utils.utils import fix_random_seed, cal_acc_comb, data_loader, data_loader_within
@@ -344,7 +343,7 @@ def train_target(args):
 if __name__ == '__main__':
     cpu_num = 8
     torch.set_num_threads(cpu_num)
-    data_name_list = ['MI1-7']  # 'BNCI2014001', 'Zhou2016', 'MI1-7', 'BNCI2014002', 'BNCI2015001'
+    data_name_list = ['BNCI2014001']  # 'BNCI2014001', 'Zhou2016', 'MI1-7', 'BNCI2014002', 'BNCI2015001'
     dct = pd.DataFrame(columns=['dataset', 'avg', 'std', 's0', 's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13'])
 
     for data_name in data_name_list:
@@ -387,8 +386,8 @@ if __name__ == '__main__':
         if args.backbone == 'IFNet':
             args.embed_dims = 64  # IFNet 64
         args.aug = True  # TODO choose augmentation or not
-        args.augmethod1 = 'multi'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
-        args.augmethod2 = 'flip'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
+        args.augmethod1 = 'flip'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
+        args.augmethod2 = 'freq'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
         args.augmethod3 = 'cr'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
         args.freq_method = 'shift'  # shift surr
         args.freq_mode = 0.1  # [0.1, 0.2, 0.3, 0.4, 0.5]
