@@ -348,7 +348,7 @@ def train_target(args):
 if __name__ == '__main__':
     cpu_num = 8
     torch.set_num_threads(cpu_num)
-    data_name_list = ['Zhou2016']  # 'BNCI2014001', 'Zhou2016', 'MI1-7', 'BNCI2014002', 'BNCI2015001'
+    data_name_list = ['BNCI2014001']  # 'BNCI2014001', 'Zhou2016', 'MI1-7', 'BNCI2014002', 'BNCI2015001'
     dct = pd.DataFrame(columns=['dataset', 'avg', 'std', 's0', 's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13'])
 
     for data_name in data_name_list:
@@ -391,9 +391,9 @@ if __name__ == '__main__':
         if args.backbone == 'IFNet':
             args.embed_dims = 64  # IFNet
         args.aug = True  # TODO choose augmentation or not
-        args.augmethod1 = 'multi'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
-        args.augmethod2 = 'flip'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
-        args.augmethod3 = 'noise'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
+        args.augmethod1 = 'flip'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
+        args.augmethod2 = 'freq'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
+        args.augmethod3 = 'cr'  # TODO: flip multi freq noise cr hs (the number of augmethod can be changed)
         args.freq_method = 'shift'  # shift surr
         args.freq_mode = 0.1  # [0.1, 0.2, 0.3, 0.4, 0.5]
         args.mult_mode = 0.2  # [0.005, 0.01, 0.05, 0.1, 0.2]
@@ -526,10 +526,10 @@ if __name__ == '__main__':
         # learning rate
         args.lr = 0.001
         # train batch size
-        # if args.aug:
-        #     args.batch_size = 64
-        # else:
-        args.batch_size = 32  # TODO
+        if args.aug:
+            args.batch_size = 64
+        else:
+            args.batch_size = 32  # TODO
         # training epochs
         args.max_epoch = 100
 
