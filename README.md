@@ -41,7 +41,22 @@ MVCNet supports three standard MI decoding paradigms:
 - **CV (Cross-Validation):** Within-subject, stratified 5-fold validation. The data partitions were structured chronologically while maintaining class-balance, following FBCNet.
 - **LOSO (Leave-One-Subject-Out):** Cross-subject generalization evaluation
 
----
+## 🔬 New Results
+
+Classification Accuracy (%) ± Std on Five MI Datasets under Chronological Order (CO) Setting:
+
+| Dataset        | MVCNet         | MVCNet (cvc)   | MVCNet (cmc)   |
+|----------------|----------------|----------------|----------------|
+| BNCI2014001    | 83.17 ± 0.74   | 82.70 ± 1.05   | 82.46 ± 0.46   |
+| Zhou2016       | 84.11 ± 2.68   | 83.18 ± 3.07   | 82.22 ± 2.61   |
+| Blankertz2007  | 87.07 ± 0.52   | 85.71 ± 1.30   | 86.21 ± 1.42   |
+| BNCI2014002    | 81.29 ± 2.31   | 81.29 ± 1.82   | 81.21 ± 1.92   |
+| BNCI2015001    | 85.67 ± 0.55   | 85.67 ± 0.08   | 85.42 ± 0.32   |
+|   Average      |   84.26        | 83.71          | 83.51          |
+
+- MVCNet: using both CVC and CMC contrastive modules.
+- MVCNet (cvc): only using the cross-view contrasting module.
+- MVCNet (cmc): only using the cross-model contrasting module.
 
 ## 📂 Dataset
 
