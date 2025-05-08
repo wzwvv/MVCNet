@@ -374,7 +374,7 @@ if __name__ == '__main__':
                                   N=N, chn=chn, class_num=class_num, paradigm=paradigm, data_name=data_name,
                                   F1=F1, D=D, F2=F2, weight=weight)
 
-        args.backbone = 'IFNet'  # EEGNet, shallow, deep, FBCNet, ADFCNN, Conformer, IFNet, Ours(can be replaced by existing networks)
+        args.backbone = 'IFNet'  # EEGNet, shallow, deep, FBCNet, ADFCNN, Conformer, IFNet (CNN backbone can be replaced by existing networks)
         args.encoder = 'Transformer'  # a 2-layer 2-head Transformer encoder and a projector
         args.method = args.backbone + '_' + data_name
         # data augmentation
