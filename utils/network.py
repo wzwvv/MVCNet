@@ -214,25 +214,25 @@ def netClf(args, return_type):
 #     return projector_t
 
 def encoder(args, nhead, nlayer):
-    """Transformer Encoder处理脑电信号"""
+    """Transformer Encoder"""
     encoder_layer = TransformerEncoderLayer(
-        d_model=args.dim_e,  # 维度
-        nhead=nhead,  # 多头注意力
-        dim_feedforward=max(2 * args.dim_e, 128),  # 动态设置dim_feedforward
-        dropout=0.1,  # 避免过拟合
-        batch_first=True  # 使得 (N, T, C) 格式兼容
+        d_model=args.dim_e,
+        nhead=nhead,
+        dim_feedforward=max(2 * args.dim_e, 128),
+        dropout=0.1,
+        batch_first=True
     )
     transformer_encoder = TransformerEncoder(encoder_layer, num_layers=nlayer)
     return transformer_encoder
 
 def projector(args):
-    """用于降维和特征提取"""
+    """降维"""
     projector_t = nn.Sequential(
         nn.Linear(args.dim_p, args.projector_dim1),
-        nn.LayerNorm(args.projector_dim1),  # within场景替换 BatchNorm1d 更适合小批量 EEG 训练
+        nn.LayerNorm(args.projector_dim1),
         nn.ReLU(inplace=True),
         nn.Linear(args.projector_dim1, args.projector_dim2),
-        nn.Tanh()  # 归一化输出
+        nn.Tanh()
     )
     return projector_t
 
