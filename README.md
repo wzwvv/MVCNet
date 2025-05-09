@@ -1,6 +1,6 @@
 # MVCNet
 
-This repository provides the official implementation of **MVCNet: Multi-View Contrastive Network for Motor Imagery Classification**.
+This repository provides the official implementation of [**MVCNet: Multi-View Contrastive Network for Motor Imagery Classification**](https://arxiv.org/abs/2502.17482).
 
 MVCNet is a dual-branch framework that integrates multi-view data augmentation, CNN–Transformer parallel modeling, and supervised contrastive learning to improve representation learning and decoding generalizability of EEG-based MI Classification.
 
