@@ -104,6 +104,6 @@ If you find this work helpful, please consider citing our paper:
 
 ## 🙌 Acknowledgments
 
-Special thanks to Jiaheng for providing the source code of IFNet [https://github.com/Jiaheng-Wang/IFNet], which served as a valuable foundation for our implementation.
+Special thanks to Jiaheng for providing the source code of [IFNet](https://github.com/Jiaheng-Wang/IFNet), which served as a valuable foundation for our implementation.
 
 We appreciate your interest and patience. Feel free to raise issues or pull requests for questions or improvements.
