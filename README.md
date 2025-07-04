@@ -12,7 +12,11 @@
 
 [![MVCNet](https://img.shields.io/badge/Paper-MVCNet-2b9348.svg?logo=arXiv)](https://arxiv.org/abs/2502.17482)&nbsp;
 
-This repository provides the official codebase of our paper **MVCNet: Multi-View Contrastive Network for Motor Imagery Classification**. The implementation of all baseline models is provided in our repository [**DBConformer**](https://github.com/wzwvv/DBConformer), serving as a benchmark codebase for EEG decoding models.
+</div>
+
+> This repository provides the official codebase of our paper **MVCNet: Multi-View Contrastive Network for Motor Imagery Classification**. The implementation of all baseline models is provided in our repository [**DBConformer**](https://github.com/wzwvv/DBConformer), serving as a benchmark codebase for EEG decoding models.
+
+## Overview
 
 MVCNet is a dual-branch framework that integrates multi-view data augmentation, CNN–Transformer parallel modeling, and supervised contrastive learning to improve representation learning and decoding generalizability of EEG-based MI Classification.
 
