@@ -2,7 +2,7 @@
 <h1>MVCNet</h1>
 <h3>Multi-View Contrastive Network for Motor Imagery Classification</h3>
 
-[Ziwei Wang](https://scholar.google.com/citations?user=fjlXqvQAAAAJ&hl=en)<sup>1</sup>, [Siyang Li](https://scholar.google.com/citations?user=5GFZxIkAAAAJ&hl=en)<sup>1</sup>, [Xiaoqing Chen](https://scholar.google.com/citations?user=LjfCH7cAAAAJ&hl=en)<sup>1, 2</sup>, Wei Li<sup>1</sup>, and [Dongrui Wu](https://scholar.google.com/citations?user=UYGzCPEAAAAJ&hl=en)<sup>1, 2 :email:</sup>
+[Ziwei Wang](https://scholar.google.com/citations?user=fjlXqvQAAAAJ&hl=en)<sup>1</sup>, [Siyang Li](https://scholar.google.com/citations?user=5GFZxIkAAAAJ&hl=en)<sup>1</sup>, [Xiaoqing Chen](https://scholar.google.com/citations?user=LjfCH7cAAAAJ&hl=en)<sup>1, 2</sup>,  and [Dongrui Wu](https://scholar.google.com/citations?user=UYGzCPEAAAAJ&hl=en)<sup>1, 2 :email:</sup>
 
 <sup>1</sup> School of Artificial Intelligence and Automation, HUST
 
@@ -54,6 +54,7 @@ MVCNet/
 └── README.md
 ```
 
+The implementation of the baseline models is available in our repository [DBConformer](https://github.com/wzwvv/DBConformer).
 
 ## 🧪 Experimental Scenarios
 
