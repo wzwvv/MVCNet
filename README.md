@@ -54,7 +54,7 @@ MVCNet/
 └── README.md
 ```
 
-The implementation of the baseline models is available in our repository [DBConformer](https://github.com/wzwvv/DBConformer).
+The implementation of baseline models is available in our repository [DBConformer](https://github.com/wzwvv/DBConformer).
 
 ## 🧪 Experimental Scenarios
 
