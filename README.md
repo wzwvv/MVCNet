@@ -14,7 +14,8 @@
 
 </div>
 
-> News: Thrilled to announce that our paper has been accepted by Knowledge-Based Systems🎉. Stay tuned for the final publication!
+> News: Thrilled to announce that our paper has been accepted by **Knowledge-Based Systems**🎉. Stay tuned for the final publication!
+
 > This repository provides the official codebase of our paper **MVCNet: Multi-View Contrastive Network for Motor Imagery Classification**. The implementation of all baseline models is provided in our repository [**DBConformer**](https://github.com/wzwvv/DBConformer), serving as a benchmark codebase for EEG decoding models.
 
 ## Overview
