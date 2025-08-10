@@ -10,7 +10,7 @@
 
 (<sup>:email:</sup>) Corresponding Author
 
-[![MVCNet]](https://www.sciencedirect.com/science/article/abs/pii/S0950705125012468)&nbsp;
+[MVCNet](https://www.sciencedirect.com/science/article/abs/pii/S0950705125012468)&nbsp;
 
 </div>
 
