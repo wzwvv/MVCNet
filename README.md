@@ -10,11 +10,11 @@
 
 (<sup>:email:</sup>) Corresponding Author
 
-[![MVCNet](https://img.shields.io/badge/Paper-MVCNet-2b9348.svg?logo=arXiv)](https://arxiv.org/abs/2502.17482)&nbsp;
+[![MVCNet](https://img.shields.io/badge/Paper-MVCNet-2b9348.svg?logo=arXiv)](https://www.sciencedirect.com/science/article/abs/pii/S0950705125012468)&nbsp;
 
 </div>
 
-> News: Our paper has been accepted by **Knowledge-Based Systems**🎉! Stay tuned for the final publication!
+> News: Our paper has been accepted by **Knowledge-Based Systems**🎉!
 
 > This repository provides the official codebase of our paper **MVCNet: Multi-View Contrastive Network for Motor Imagery Classification**. The implementation of all baseline models is provided in our repository [**DBConformer**](https://github.com/wzwvv/DBConformer), serving as a benchmark codebase for EEG decoding models.
 
